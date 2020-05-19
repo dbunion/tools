@@ -1,15 +1,15 @@
 # Script
 
-# myrocks_hotbackup
+#＃ myrocks_hotbackup
 提供innodb目录不在datadir目录下的备份恢复支持
 使用方式
 
-备份
+###备份
 ```
 ./myrocks_hotbackup -uroot -S/var/lib/mysql/tmp/mysql.socket -P3306 --stream=tar --checkpoint_dir=/tmp/backup | ssh 192.168.1.100 'tar -xi -C /backup' -p
 ```
 
-恢复
+###恢复
 ```
 # 删除数据目录
 /bin/rm -rf /var/lib/mysql/data/mysql/data && /bin/rm -rf /var/lib/mysql/data/mysql/rocksdb/data && /bin/rm -rf /var/lib/mysql/data/mysql/innodb
