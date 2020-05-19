@@ -1,6 +1,6 @@
 # Script
 
-#＃ myrocks_hotbackup
+## myrocks_hotbackup
 提供innodb目录不在datadir目录下的备份恢复支持
 使用方式
 
